@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="" method="get">
+        <table border="1">
+            <caption>Fill Form please</caption>
+            <thead>
+                <tr>
+                    <td>S.no</td>
+                    <td colspan="5">Details</td>
+                    <!-- <td rowspan="1"></td> -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td><label for="name">Enter name</label></td>
+                    <td><input type="text" placeholder="Enter your name" required></td>
+                    <td>10</td>
+                    <td><label for="month">Enter month</label></td>
+                    <td><input type="month" required></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td><label for="name">Enter father name</label></td>
+                    <td><input type="text" placeholder="Enter your father name" required></td>
+                    <td>11</td>
+                    <td><label for="tele">Enter number</label></td>
+                    <td><input type="tel" required></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td><label for="name">Enter mother name</label></td>
+                    <td><input type="text" placeholder="Enter your mother name" required></td>
+                    <td>12</td>
+                    <td><label for="file">upload photo</label></td>
+                    <td><input type="file" id="dp" required></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td><label for="email">Enter your email</label></td>
+                    <td><input type="email" placeholder="Enter your email" required></td>
+                    <td>13</td>
+                    <td><label for="password">create password</label></td>
+                    <td><input type="password" required></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td><label for="gender">gender</label></td>
+                    <td>
+                        <input type="radio">
+                        <label for="gender">male</label>
+                        <input type="radio">
+                        <label for="gender">female</label>
+                    </td>
+                    <td>14</td>
+                    <td><label for="url">Enter your ig url</label></td>
+                    <td><input type="url" required></td>
+
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td><label for="dob">Enter dob</label></td>
+                    <td><input type="date" required></td>
+                    <td rowspan="4" colspan="3"><input type="image" src="" alt="upload image first to see preview" required></td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td><label for="time">Enter time</label></td>
+                    <td><input type="time" required></td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td><label for="week">Enter week</label></td>
+                    <td><input type="week" required></td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td><label for="color">Select color</label></td>
+                    <td><input required type="color" id="color"></td>
+                </tr>
+
+                <tr>
+                    <td colspan="6"><input type="checkbox" required>Accept terms and conditions</td>
+                </tr>
+
+                <tr>
+                    <td colspan="3">
+                        <input type="reset" value="reset">
+                    </td>
+                    <td colspan="3">
+                        <input type="submit" value="submit">
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+    </form>
+    <script>
+        setInterval(() => {
+            let a = document.getElementById("color")
+            let b = a.value
+            document.body.style.backgroundColor = b
+        }, 1);
+    </script>
+</body>
+
+</html>
